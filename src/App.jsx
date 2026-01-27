@@ -1,26 +1,16 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
-import Banner from "./Components/Banner";
-import CustomerTrust from "./Components/CustomerTrust";
-import AutoPlay from "./Components/AutoPlay";
-import FAQ from "./Components/FAQ";
-import ContactUs from "./Components/ContactUs";
-import SocialMediaLinks from "../SocialMediaLinks";
-import Footer from "./Components/Footer";
+import PathRouter from "./Components/PathRouter";
+
+
 
 export default function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Banner />
-      <CustomerTrust />
-      <AutoPlay />
-      <FAQ />
-      <ContactUs />
-      <SocialMediaLinks />
-      <Footer />
-    </div>
+      <div className="">
+        <PathRouter />
+      </div>
+    </>
   );
 }
-
-

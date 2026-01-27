@@ -8,8 +8,6 @@ export default function Navbar() {
       className="navbar navbar-expand-lg shadow-sm py-2 sticky-top"
       style={{
         backgroundColor: "rgba(11, 37, 69, 0.5)",
-        
-       
       }}
     >
       <div className="container-fluid px-4">
@@ -30,7 +28,7 @@ export default function Navbar() {
           data-bs-toggle="collapse"
           data-bs-target="#mainNavbar"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" ></span>
         </button>
 
         {/* COLLAPSE */}
@@ -42,9 +40,6 @@ export default function Navbar() {
               <Link className="nav-link text-white fw-semibold" to="/">Home</Link>
             </li>
 
-            
-
-            
 
             <li className="nav-item">
               <Link className="nav-link text-white fw-semibold" to="/deals">Deals</Link>
