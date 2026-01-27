@@ -1,0 +1,124 @@
+import React, { useState } from "react";
+
+export default function ContactUs() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Message submitted successfully!");
+    // here later you can connect API (email / CRM / backend)
+  };
+
+  return (
+    <div className="bg-light py-5">
+      <div className="container">
+        <div className="row align-items-center g-5">
+          
+          {/* Left content */}
+          <div className="col-lg-5">
+            <h6 className="text-uppercase text-muted">Contact Us</h6>
+            <h2 className="fw-bold mb-3">
+              Talk to our Business Class Experts
+            </h2>
+            <p className="text-muted">
+              Need help finding the best business class fares or planning your
+              trip? Send us your details and our team will get back to you with
+              personalized assistance.
+            </p>
+
+            <ul className="list-unstyled mt-4">
+              <li className="mb-2">✔ Fast response</li>
+              <li className="mb-2">✔ Secure & private</li>
+              <li className="mb-2">✔ Expert travel support</li>
+            </ul>
+          </div>
+
+          {/* Form */}
+          <div className="col-lg-7">
+            <div className="bg-white p-4 p-md-5 shadow rounded-4">
+              <form onSubmit={handleSubmit}>
+                <div className="row g-3">
+                  <div className="col-md-6">
+                    <label className="form-label">Full Name*</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter your name"
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="col-md-6">
+                    <label className="form-label">Email*</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Enter your email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="col-md-6">
+                    <label className="form-label">Phone (optional)</label>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="+91 98765 43210"
+                      name="phone"
+                      value={form.phone}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className="col-md-12">
+                    <label className="form-label">Your Message*</label>
+                    <textarea
+                      className="form-control"
+                      rows="4"
+                      placeholder="Tell us about your travel plan or question"
+                      name="message"
+                      value={form.message}
+                      onChange={handleChange}
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div className="col-12">
+                    <button
+                      type="submit"
+                      className="btn  w-100 py-3" style={{ background: "linear-gradient(135deg,#ff3c3c,#ff8c00)",
+                color: "white" , fontWeight:"700"}}
+                    >
+                      Send Message
+                    </button>
+                  </div>
+
+                  <div className="col-12 text-center text-muted small mt-2">
+                    By submitting this form you agree to our privacy policy and
+                    communication terms.
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+}
