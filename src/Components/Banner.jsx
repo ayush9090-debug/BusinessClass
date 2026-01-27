@@ -79,11 +79,6 @@ export default function Banner() {
           </div>
         </div>
 
-        {/* Trust Text */}
-        <p className="mt-4 text-warning small">
-          Last month Business class saved clients over $1,400,000
-        </p>
-
       </div>
     </div>
   );

@@ -48,6 +48,10 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link text-white fw-semibold" to="/support">Support</Link>
             </li>
+
+            <li className="nav-item">
+              <Link className="nav-link text-white fw-semibold" to="/my-trip">My Trip</Link>
+            </li>
           </ul>
 
           {/* RIGHT */}
@@ -61,7 +65,6 @@ export default function Navbar() {
                 borderRadius: "30px",
                 padding: "8px 20px",
                 fontWeight: "600",
-                
                 transition: "0.3s"
               }}
             >

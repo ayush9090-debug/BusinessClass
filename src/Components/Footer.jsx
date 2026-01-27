@@ -13,8 +13,8 @@ import {
 export default function Footer() {
   const styles = {
     footer: {
-      backgroundColor: "#003366",
-      color: "#FFFFFF",
+      backgroundColor: "#333",
+      color: "#fff",
       padding: "60px 20px 30px 20px",
       fontFamily: "'Inter', sans-serif",
     },
