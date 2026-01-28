@@ -56,7 +56,7 @@ export default function Deals() {
             <button
               key={item}
               className={`btn ${
-                tab === item ? "btn-dark" : "btn-outline-dark"
+                tab === item ? "btn-color text-light" : "btn-outline-btn-color"
               }`}
               onClick={() => setTab(item)}
             >
@@ -93,7 +93,7 @@ export default function Deals() {
                   airline promotion.
                 </p>
                 <h5 className="text-success fw-bold">Save up to ₹10,000</h5>
-                <button className="btn btn-dark mt-3 px-4">
+                <button className="btn btn-color mt-3 px-4 text-light">
                   Book International Flights
                 </button>
               </div>
@@ -115,7 +115,7 @@ export default function Deals() {
                 <span className="badge bg-light text-dark">
                   Code: {deal.code}
                 </span>
-                <button className="btn btn-outline-dark btn-sm">
+                <button className="btn btn-color text-light btn-sm ">
                   Book Now
                 </button>
               </div>

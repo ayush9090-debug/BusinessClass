@@ -89,7 +89,7 @@ export default function Support() {
           </p>
 
           <div className="d-flex justify-content-center gap-4 flex-wrap">
-            <a href="tel:+99999999" className="btn btn-primary d-flex align-items-center gap-2">
+            <a href="tel:+99999999" className="btn  d-flex align-items-center gap-2" style={{background :"linear-gradient(135deg,#ff3c3c,#ff8c00)"}}>
               <Phone size={18} /> +99999999
             </a>
 
