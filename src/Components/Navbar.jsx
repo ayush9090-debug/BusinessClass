@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="navbar navbar-expand-lg sticky-top shadow-sm"
+      className="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm"
       style={{
         background: "rgba(11, 37, 69, 0.8)",
         backdropFilter: "blur(10px)",
@@ -31,20 +31,22 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* TOGGLER */}
+        {/* TOGGLER (WHITE ICON) */}
         <button
-          className="navbar-toggler border border-white"
+          className="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
 
         {/* MENU */}
         <div className="collapse navbar-collapse" id="mainNavbar">
           <ul className="navbar-nav me-auto gap-lg-4 text-center text-lg-start mt-3 mt-lg-0">
-
             {navLinks.map((item) => {
               const isActive = location.pathname === item.path;
 
@@ -90,7 +92,6 @@ export default function Navbar() {
               +99999999
             </a>
           </div>
-
         </div>
       </div>
     </nav>
