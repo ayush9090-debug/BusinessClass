@@ -112,7 +112,7 @@ export default function Deals() {
               <p className="fw-bold text-success">{deal.price}</p>
 
               <div className="d-flex justify-content-between align-items-center mt-auto">
-                <span className="badge bg-light text-dark">
+                <span className="badge text-dark">
                   Code: {deal.code}
                 </span>
                 <button className="btn btn-color text-light btn-sm ">

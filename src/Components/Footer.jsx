@@ -191,7 +191,7 @@ export default function Footer() {
         >
           <Globe size={16} /> <HelpCircle size={16} /> <ShieldCheck size={16} />
         </div>
-        <p>© 2026 PSI Travelo. All Rights Reserved. Managed with excellence.</p>
+        <p>© 2026 Business Class. All Rights Reserved. Managed with excellence.</p>
       </div>
     </footer>
   );
