@@ -3,77 +3,116 @@ import React, { useState } from "react";
 export default function MyTrip() {
   const [mode, setMode] = useState("ticket");
 
+ 
+  const BG_OVERLAY_OPACITY = 0.45; 
+  const BG_BLUR = "6px";             
+  const CARD_OPACITY = 0.85;        
+  const CARD_BLUR = "14px";          
+  
+
   return (
     <div
-      className="min-vh-100"
+      className="min-vh-100 position-relative"
       style={{
-        backgroundImage:
-          "url('https://i.pinimg.com/736x/92/ff/d5/92ffd5f3121a2d43d5d84a229b581a28.jpg')",
+        backgroundImage: "url('/Trip_Banner.jpg.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container min-vh-100">
-        <div className="row min-vh-100 align-items-center">
+      {/* Background overlay */}
+      <div
+        className="position-absolute top-0 start-0 w-100 h-100"
+        style={{
+          background: `rgba(0,0,0,${BG_OVERLAY_OPACITY})`,
+          backdropFilter: `blur(${BG_BLUR})`,
+        }}
+      />
+
+      <div className="container min-vh-100 position-relative">
+        <div className="row min-vh-100 justify-content-center align-items-center">
           
-         
-          <div className="col-12 col-md-6 col-lg-5">
-            <div className="bg-white rounded-4 shadow-lg p-3 p-md-4">
+          <div className="col-12 col-md-7 col-lg-5">
+            <div
+              className="rounded-4 shadow-lg p-4"
+              style={{
+                background: `rgba(255,255,255,${CARD_OPACITY})`,
+                backdropFilter: `blur(${CARD_BLUR})`,
+                border: "1px solid rgba(255,255,255,0.35)",
+              }}
+            >
+              <h4 className="fw-bold text-center mb-4">My Trip</h4>
 
-              <h4 className="fw-bold text-center mb-3">My Trip</h4>
-
-              <div className="btn-group w-100 mb-3">
+              {/* Toggle */}
+              <div
+                className="d-flex rounded-pill p-1 mb-4"
+                style={{
+                  background: "rgba(255,255,255,0.6)",
+                }}
+              >
                 <button
-                  className={`btn ${
-                    mode === "email" ? "btn-primary" : "btn-outline-secondary"
+                  className={`btn flex-fill rounded-pill fw-semibold ${
+                    mode === "email" ? "text-white" : "text-dark"
                   }`}
+                  style={{
+                    background:
+                      mode === "email"
+                        ? "linear-gradient(135deg,#ff6a00,#ff3c3c)"
+                        : "transparent",
+                    transition: "0.3s",
+                  }}
                   onClick={() => setMode("email")}
                 >
                   By Email
                 </button>
+
                 <button
-                  className={`btn ${
-                    mode === "ticket" ? "btn-primary" : "btn-outline-secondary"
+                  className={`btn flex-fill rounded-pill fw-semibold ${
+                    mode === "ticket" ? "text-white" : "text-dark"
                   }`}
+                  style={{
+                    background:
+                      mode === "ticket"
+                        ? "linear-gradient(135deg,#ff6a00,#ff3c3c)"
+                        : "transparent",
+                    transition: "0.3s",
+                  }}
                   onClick={() => setMode("ticket")}
                 >
                   By Ticket
                 </button>
               </div>
 
-              <div className="mb-3">
-                {mode === "ticket" && (
-                  <>
-                    <p className="text-muted small mb-2">
-                      Enter your ticket number and last name.
-                    </p>
-                    <input
-                      type="text"
-                      className="form-control mb-2"
-                      placeholder="13-digit Ticket Number"
-                    />
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Passenger Last Name"
-                    />
-                  </>
-                )}
+              {/* Form */}
+              {mode === "ticket" && (
+                <>
+                  <p className="text-muted small mb-2">
+                    Enter your ticket number and last name
+                  </p>
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="13-digit Ticket Number"
+                  />
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Passenger Last Name"
+                  />
+                </>
+              )}
 
-                {mode === "email" && (
-                  <>
-                    <p className="text-muted small mb-2">
-                      Enter the email used while booking.
-                    </p>
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Enter your email"
-                    />
-                  </>
-                )}
-              </div>
+              {mode === "email" && (
+                <>
+                  <p className="text-muted small mb-2">
+                    Enter the email used while booking
+                  </p>
+                  <input
+                    type="email"
+                    className="form-control mb-3"
+                    placeholder="Enter your email"
+                  />
+                </>
+              )}
 
               <button
                 className="btn w-100 py-2 fw-semibold"
@@ -86,9 +125,8 @@ export default function MyTrip() {
               </button>
 
               <p className="text-center text-muted small mt-3 mb-0">
-                Need help? Contact our 24×7 support team.
+                Need help? Contact our 24×7 support team
               </p>
-
             </div>
           </div>
 
