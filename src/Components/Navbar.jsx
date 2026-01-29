@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm"
+      className="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm"
       style={{
         background: "rgba(11, 37, 69, 0.8)",
         backdropFilter: "blur(10px)",
@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* LOGO */}
         <Link className="navbar-brand" to="/">
           <img
-            src="/BusinessClassLogo.png"
+            src="/photos/BusinessClassLogo.png"
             alt="logo"
             style={{ height: "48px" }}
           />

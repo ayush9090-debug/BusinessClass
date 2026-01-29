@@ -41,7 +41,7 @@ export default function CustomerTrust() {
           }}
         >
           <img
-            src="/Business_Class_Trusted_By_Travelers.jpg.jpeg"
+            src="/photos/Business_Class_Trusted_By_Travelers.jpg.jpeg"
             className="img-fluid rounded-4 shadow-lg"
             alt="Business class seat"
           />
@@ -97,7 +97,7 @@ export default function CustomerTrust() {
         >
           <div className="card border-0 shadow-lg rounded-4 overflow-hidden">
             <img
-              src="/Business_Class_Travel_Management.jpg.jpeg"
+              src="/photos/Business_Class_Travel_Management.jpg.jpeg"
               className="img-fluid"
               alt="Business Class customers"
               // style={{objectFit: "cover", width: "100%" }}

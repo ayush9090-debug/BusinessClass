@@ -6,7 +6,7 @@ export default function Banner() {
 
       {/* Background Image */}
       <img
-        src="/Business_Class_Banner_1.jpg.jpeg"  // public folder path
+        src="/photos/Business_Class_Banner_1.jpg.jpeg"  // public folder path
         alt="Flight Background"
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{ objectFit: "cover" }}

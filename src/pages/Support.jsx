@@ -1,24 +1,30 @@
 import React from "react";
-import { Phone, Mail, Calendar, XCircle, RefreshCcw, Briefcase } from "lucide-react";
-import Footer from "./Footer";
+import {
+  Phone,
+  Mail,
+  Calendar,
+  XCircle,
+  RefreshCcw,
+  Briefcase,
+} from "lucide-react";
+import Footer from "../Components/Footer";
 
 export default function Support() {
   return (
     <>
       {/* Main content with container */}
-      <div className="container py-5">
-
+      <div className="container mt-5" style={{paddingTop : "50px"}}>
         {/* Page Header */}
         <div className="mb-5 text-center">
           <h1 className="fw-bold">Flight Support</h1>
           <p className="text-muted">
-            Manage your booking, change travel dates, cancel flights or get help from our support team.
+            Manage your booking, change travel dates, cancel flights or get help
+            from our support team.
           </p>
         </div>
 
         {/* Support Options */}
         <div className="row g-4">
-
           <div className="col-md-6">
             <div className="border rounded p-4 h-100">
               <div className="d-flex align-items-center gap-3 mb-3">
@@ -26,7 +32,8 @@ export default function Support() {
                 <h5 className="mb-0">Reschedule Flight</h5>
               </div>
               <p className="text-muted small">
-                Change your travel date or time. Fare difference and airline charges may apply.
+                Change your travel date or time. Fare difference and airline
+                charges may apply.
               </p>
               <button className="btn btn-outline-primary btn-sm">
                 Request Date Change
@@ -78,18 +85,22 @@ export default function Support() {
               </button>
             </div>
           </div>
-
         </div>
 
         {/* Support Contact */}
         <div className="mt-5 border-top pt-4 text-center">
           <h5 className="fw-semibold mb-2">Need Immediate Help?</h5>
           <p className="text-muted small mb-3">
-            Our travel experts are available 24×7 to help with urgent booking issues.
+            Our travel experts are available 24×7 to help with urgent booking
+            issues.
           </p>
 
-          <div className="d-flex justify-content-center gap-4 flex-wrap">
-            <a href="tel:+99999999" className="btn  d-flex align-items-center gap-2" style={{background :"linear-gradient(135deg,#ff3c3c,#ff8c00)"}}>
+          <div className="d-flex justify-content-center gap-4 flex-wrap mb-4">
+            <a
+              href="tel:+99999999"
+              className="btn  d-flex align-items-center gap-2"
+              style={{ background: "linear-gradient(135deg,#ff3c3c,#ff8c00)" }}
+            >
               <Phone size={18} /> +99999999
             </a>
 
@@ -101,7 +112,6 @@ export default function Support() {
             </a>
           </div>
         </div>
-
       </div>
 
       <Footer />

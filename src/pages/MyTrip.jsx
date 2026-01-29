@@ -14,7 +14,7 @@ export default function MyTrip() {
     <div
       className="min-vh-100 position-relative"
       style={{
-        backgroundImage: "url('/Trip_Banner.jpg.jpeg')",
+        backgroundImage: "url('/photos/Trip_Banner.jpg.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

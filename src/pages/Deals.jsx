@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Footer from "./Footer";
+import Footer from "../Components/Footer";
+
 
 export default function Deals() {
   const [tab, setTab] = useState("all");
@@ -46,7 +47,7 @@ export default function Deals() {
         style={{
           height: "100vh",
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)), url(/Flight_Deals_Offer_Banner.jpg.jpeg)",
+            "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)), url(/photos/Flight_Deals_Offer_Banner.jpg.jpeg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -105,7 +106,7 @@ export default function Deals() {
               <div className="row g-0">
                 <div className="col-md-6">
                   <img
-                    src="/Mega_sale.jpg"
+                    src="/photos/Mega_sale.jpg"
                     className="img-fluid h-100 w-100 object-fit-cover"
                     alt=""
                   />
@@ -160,7 +161,7 @@ export default function Deals() {
         </div>
       </div>
 
-      <Footer />
+     <Footer /> 
     </>
   );
 }
