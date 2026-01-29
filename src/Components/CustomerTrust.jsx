@@ -41,7 +41,7 @@ export default function CustomerTrust() {
           }}
         >
           <img
-            src="/IMAGE_1.jfif"
+            src="/Business_Class_Trusted_By_Travelers.jpg.jpeg"
             className="img-fluid rounded-4 shadow-lg"
             alt="Business class seat"
           />
@@ -84,7 +84,7 @@ export default function CustomerTrust() {
       </div>
 
       {/* SECOND ROW */}
-      <div className="row align-items-center mt-5 g-5 flex-lg-row-reverse">
+      <div className="row align-items-center mt-2 g-3 flex-lg-row-reverse">
 
         {/* IMAGE */}
         <div
@@ -97,10 +97,10 @@ export default function CustomerTrust() {
         >
           <div className="card border-0 shadow-lg rounded-4 overflow-hidden">
             <img
-              src="/IMAGE_2.jpg"
+              src="/Business_Class_Travel_Management.jpg.jpeg"
               className="img-fluid"
               alt="Business Class customers"
-              style={{ height: "420px", objectFit: "cover", width: "100%" }}
+              // style={{objectFit: "cover", width: "100%" }}
             />
           </div>
         </div>

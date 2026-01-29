@@ -40,100 +40,127 @@ export default function Deals() {
 
   return (
     <>
-    <div className="container py-5">
-      {/* Heading */}
-      <div className="text-center mb-4">
-        <h2 className="fw-bold">Flight Deals & Offers</h2>
-        <p className="text-muted">
-          Book flights at the best prices with exclusive airline offers.
-        </p>
-      </div>
-
-      {/* Tabs */}
-      <div className="d-flex justify-content-center mb-4 flex-wrap gap-2">
-        {["all", "international", "domestic", "student", "lastminute"].map(
-          (item) => (
-            <button
-              key={item}
-              className={`btn ${
-                tab === item ? "btn-color text-light" : "btn-outline-btn-color"
-              }`}
-              onClick={() => setTab(item)}
-            >
-              {item === "all"
-                ? "All Deals"
-                : item === "international"
-                ? "International"
-                : item === "domestic"
-                ? "Domestic"
-                : item === "student"
-                ? "Student"
-                : "Last Minute"}
-            </button>
-          )
-        )}
-      </div>
-
-      {/* Featured Banner */}
-      <div className="row justify-content-center mb-5">
-        <div className="col-lg-10">
-          <div className="card border-0 shadow rounded-4 overflow-hidden">
-            <div className="row g-0">
-              <div className="col-md-6">
-                <img
-                  src="https://i.pinimg.com/736x/92/ff/d5/92ffd5f3121a2d43d5d84a229b581a28.jpg"
-                  className="img-fluid h-100 w-100 object-fit-cover"
-                  alt="Flight Deal"
-                />
-              </div>
-              <div className="col-md-6 p-4">
-                <h4 className="fw-bold">Mega International Sale ✈️</h4>
-                <p className="text-muted">
-                  Book international flights at unbeatable prices. Limited time
-                  airline promotion.
-                </p>
-                <h5 className="text-success fw-bold">Save up to ₹10,000</h5>
-                <button className="btn btn-color mt-3 px-4 text-light">
-                  Book International Flights
-                </button>
-              </div>
+      {/* HERO SECTION */}
+      <div
+        className="container-fluid p-0"
+        style={{
+          height: "100vh",
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)), url(/Flight_Deals_Offer_Banner.jpg.jpeg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="h-100 d-flex align-items-center">
+          <div className="container text-light">
+            <div style={{ maxWidth: "650px" }}>
+              <h1 className="fw-bold display-4 mb-3">
+                Flight Deals & Exclusive Offers
+              </h1>
+              <p className="lead mb-4">
+                Compare and book international & domestic flights at the lowest
+                prices with exclusive airline deals.
+              </p>
+              {/* <button className="btn btn-color btn-lg px-5 text-light">
+                Explore All Deals
+              </button> */}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Deals Cards */}
-      <div className="row g-4">
-        {filteredDeals.map((deal, index) => (
-          <div key={index} className="col-md-6 col-lg-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4 p-4">
-              <h5 className="fw-semibold">{deal.title}</h5>
-              <p className="text-muted small">{deal.desc}</p>
-              <p className="fw-bold text-success">{deal.price}</p>
+      {/* DEALS SECTION */}
+      <div className="container py-5">
+        {/* Tabs */}
+        <div className="d-flex justify-content-center mb-4 gap-3 flex-wrap">
+          {["all", "international", "domestic", "student", "lastminute"].map(
+            (item) => (
+              <button
+                key={item}
+                className={`btn ${
+                  tab === item
+                    ? "btn-color text-light"
+                    : "btn-outline-btn-color"
+                }`}
+                onClick={() => setTab(item)}
+              >
+                {item === "all"
+                  ? "All Deals"
+                  : item === "international"
+                  ? "International"
+                  : item === "domestic"
+                  ? "Domestic"
+                  : item === "student"
+                  ? "Student"
+                  : "Last Minute"}
+              </button>
+            )
+          )}
+        </div>
 
-              <div className="d-flex justify-content-between align-items-center mt-auto">
-                <span className="badge text-dark">
-                  Code: {deal.code}
-                </span>
-                <button className="btn btn-color text-light btn-sm ">
-                  Book Now
-                </button>
+        {/* Highlight Offer */}
+        <div className="row justify-content-center mb-5">
+          <div className="col-lg-10">
+            <div className="card border-0 shadow-lg rounded-4 overflow-hidden">
+              <div className="row g-0">
+                <div className="col-md-6">
+                  <img
+                    src="/Mega_sale.jpg"
+                    className="img-fluid h-100 w-100 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+                <div className="col-md-6 p-4 d-flex flex-column justify-content-center">
+                  <h3 className="fw-bold mb-2">
+                    Mega International Sale 
+                  </h3>
+                  <p className="text-muted">
+                    Fly worldwide with premium airlines at special discounted
+                    fares. Limited time only.
+                  </p>
+                  <h5 className="text-success fw-bold">
+                    Save up to ₹10,000
+                  </h5>
+                  <button className="btn btn-color mt-3 px-4 text-light align-self-start">
+                    Book Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Deals Cards */}
+        <div className="row g-4">
+          {filteredDeals.map((deal, index) => (
+            <div key={index} className="col-md-6 col-lg-4">
+              <div className="card h-100 border-0 shadow-sm rounded-4 p-4">
+                <h5 className="fw-semibold">{deal.title}</h5>
+                <p className="text-muted small">{deal.desc}</p>
+                <p className="fw-bold text-success">{deal.price}</p>
+                <div className="d-flex justify-content-between align-items-center mt-auto">
+                  <span className="badge bg-light text-dark">
+                    Code: {deal.code}
+                  </span>
+                  <button className="btn btn-color btn-sm text-light">
+                    Book
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Info */}
+        <div className="text-center mt-5">
+          <p className="text-muted">
+            Prices may vary based on airline & availability. Book early for the
+            best fares.
+          </p>
+        </div>
       </div>
 
-      {/* Bottom Info */}
-      <div className="text-center mt-5">
-        <p className="text-muted">
-          Prices may vary based on airline, date & availability. Book early for
-          the best fares.
-        </p>
-      </div>
-      
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 }

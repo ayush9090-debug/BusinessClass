@@ -1,105 +1,6 @@
 import React from "react";
 
 export default function AutoPlay() {
-  const styles = {
-    wrapper: {
-      overflow: "hidden",
-      padding: "80px 0",
-      background: "#f9fbff",
-    },
-    marqueeTrack: {
-      display: "flex",
-      width: "max-content",
-      animation: "scroll 35s linear infinite",
-    },
-    card: {
-      flexShrink: 0,
-      width: "360px",
-      margin: "0 25px",
-      background: "#ffffff",
-      borderRadius: "18px",
-      padding: "28px",
-      // Removed top border and added better natural shadow
-      boxShadow: "0 8px 25px rgba(0,0,0,0.1)",
-      transition: "all 0.4s ease",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-    },
-    name: {
-      fontSize: "1.2rem",
-      fontWeight: "700",
-      color: "#0b2545",
-      marginBottom: "2px",
-    },
-    route: {
-      fontSize: "0.9rem",
-      color: "#777",
-      marginBottom: "8px",
-    },
-    airline: {
-      fontSize: "0.85rem",
-      color: "#ff4c4c", // Red text
-      fontWeight: "600",
-      marginBottom: "15px",
-    },
-    review: {
-      fontSize: "1rem",
-      color: "#222",
-      lineHeight: "1.6",
-      marginBottom: "20px",
-    },
-    stars: {
-      color: "#ff4c4c", // Red stars
-      fontSize: "1.1rem",
-      letterSpacing: "3px",
-    },
-    headingWrap: {
-      textAlign: "center",
-      marginBottom: "50px",
-    },
-    smallTitle: {
-      color: "#ff4c4c", // Red small title
-      fontWeight: "700",
-      letterSpacing: "2px",
-      fontSize: "0.9rem",
-    },
-    title: {
-      fontSize: "2.6rem",
-      fontWeight: "800",
-      color: "#0b2545",
-      margin: "10px 0",
-    },
-    subtitle: {
-      color: "#555",
-      maxWidth: "700px",
-      margin: "0 auto",
-      fontSize: "1.1rem",
-    },
-    ratingBar: {
-      textAlign: "center",
-      marginTop: "60px",
-      fontSize: "1.1rem",
-      fontWeight: "600",
-      color: "#0b2545",
-    },
-    keyframe: `
-      @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-
-      .review-card:hover {
-        transform: translateY(-12px);
-        box-shadow: 0 20px 50px rgba(0,0,0,0.12); /* natural hover shadow */
-      }
-
-      .marquee-container:hover .track {
-        animation-play-state: paused;
-      }
-    `,
-  };
-
   const reviews = [
     {
       name: "Russel",
@@ -128,14 +29,55 @@ export default function AutoPlay() {
   ];
 
   return (
-    <div style={styles.wrapper} className="overflow-hidden">
-      <style>{styles.keyframe}</style>
+    <div className="py-4 bg-light overflow-hidden">
+      <style>{`
+        .marquee-track {
+          display: flex;
+          animation: scroll 28s linear infinite;
+        }
+
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+
+        .marquee-container:hover .marquee-track {
+          animation-play-state: paused;
+        }
+
+        /* CARD BASE */
+        .review-card {
+          width: 360px;
+          height: 260px; 
+          margin: 0 25px;
+          border-radius: 18px;
+          background: #fff;
+          box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+          transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                      box-shadow 0.6s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 24px;
+          flex-shrink: 0;
+        }
+
+        /* PREMIUM HOVER */
+        .review-card:hover {
+          transform: translateY(-6px) scale(1.02);
+          box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+        }
+      `}</style>
 
       {/* HEADING */}
-      <div style={styles.headingWrap}>
-        <div style={styles.smallTitle}>TRUSTED BY THOUSANDS</div>
-        <h2 style={styles.title}>Luxury Travelers Love Us</h2>
-        <p style={styles.subtitle}>
+      <div className="text-center mb-5">
+        <div className="fw-bold text-danger small" style={{ letterSpacing: "2px" }}>
+          TRUSTED BY THOUSANDS
+        </div>
+        <h2 className="fw-bold display-6 text-dark my-2">
+          Luxury Travelers Love Us
+        </h2>
+        <p className="text-muted mx-auto" style={{ maxWidth: "700px" }}>
           We help business and first-class travelers book smarter, travel
           better, and enjoy exclusive fares that are not available online.
         </p>
@@ -143,24 +85,32 @@ export default function AutoPlay() {
 
       {/* MARQUEE */}
       <div className="marquee-container">
-        <div className="track" style={styles.marqueeTrack}>
+        <div className="marquee-track">
           {[...reviews, ...reviews].map((review, index) => (
-            <div key={index} className="review-card" style={styles.card}>
+            <div key={index} className="review-card">
               <div>
-                <h4 style={styles.name}>{review.name}</h4>
-                <div style={styles.route}>{review.route}</div>
-                <div style={styles.airline}>{review.airline}</div>
-                <p style={styles.review}>"{review.text}"</p>
+                <h5 className="fw-bold text-corol mb-1">
+                  {review.name}
+                </h5>
+                <div className="text-muted small mb-1">
+                  {review.route}
+                </div>
+                <div className="text-danger fw-semibold small mb-3">
+                  {review.airline}
+                </div>
+                <p className="text-dark mb-0">
+                  "{review.text}"
+                </p>
               </div>
-              <div style={styles.stars}>★★★★★</div>
+              <div className="text-success fs-5">★★★★★</div>
             </div>
           ))}
         </div>
       </div>
 
       {/* RATING BAR */}
-      <div style={styles.ratingBar}>
-        Excellent ★★★★★ &nbsp;|&nbsp; Trusted by 25,000+ Luxury Travelers
+      <div className="text-center mt-5 fw-semibold text-dark">
+        Excellent <span className="text-success">★★★★★</span> &nbsp;|&nbsp; Trusted by 25,000+ Luxury Travelers
       </div>
       <hr />
     </div>
