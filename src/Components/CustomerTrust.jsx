@@ -41,7 +41,7 @@ export default function CustomerTrust() {
           }}
         >
           <img
-            src="/photos/Business_Class_Trusted_By_Travelers.jpg.jpeg"
+            src="/photos/Business_Class_Travel_Management.jpg.jpeg"
             className="img-fluid rounded-4 shadow-lg"
             alt="Business class seat"
           />
@@ -57,8 +57,8 @@ export default function CustomerTrust() {
           }}
         >
           <h2 className="fw-bold mb-3">
-            Business Class is Trusted by{" "}
-            <span style={{ color: "red" }}>188K+</span> Travelers
+            Business Class is Trusted by
+            <span className="text-corol">188K+</span> Travelers
           </h2>
 
           <p className="text-muted">
@@ -68,15 +68,15 @@ export default function CustomerTrust() {
 
           <div className="d-flex gap-4 mt-4">
             <div>
-              <h4 className="fw-bold mb-0" style={{ color: "red" }}>188K+</h4>
+              <h4 className="fw-bold mb-0 text-corol">188K+</h4>
               <small className="text-muted">Happy Travelers</small>
             </div>
             <div>
-              <h4 className="fw-bold mb-0" style={{ color: "red" }}>24/7</h4>
+              <h4 className="fw-bold mb-0 text-corol">24/7</h4>
               <small className="text-muted">Live Support</small>
             </div>
             <div>
-              <h4 className="fw-bold mb-0" style={{ color: "red" }}>97%</h4>
+              <h4 className="fw-bold mb-0 text-corol">97%</h4>
               <small className="text-muted">Positive Reviews</small>
             </div>
           </div>
@@ -97,10 +97,10 @@ export default function CustomerTrust() {
         >
           <div className="card border-0 shadow-lg rounded-4 overflow-hidden">
             <img
-              src="/photos/Business_Class_Travel_Management.jpg.jpeg"
+              src="/photos/Business_Class_Trusted_By_Travelers.jpg.jpeg"
               className="img-fluid"
               alt="Business Class customers"
-              // style={{objectFit: "cover", width: "100%" }}
+             
             />
           </div>
         </div>

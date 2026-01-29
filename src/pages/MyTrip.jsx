@@ -50,7 +50,7 @@ export default function MyTrip() {
                 }}
               >
                 <button
-                  className={`btn flex-fill rounded-pill fw-semibold ${
+                  className={`btn flex-fill rounded-pill fw-semibold btn-outline-none ${
                     mode === "email" ? "text-white" : "text-dark"
                   }`}
                   style={{
@@ -59,6 +59,7 @@ export default function MyTrip() {
                         ? "linear-gradient(135deg,#ff6a00,#ff3c3c)"
                         : "transparent",
                     transition: "0.3s",
+                    
                   }}
                   onClick={() => setMode("email")}
                 >
@@ -75,6 +76,7 @@ export default function MyTrip() {
                         ? "linear-gradient(135deg,#ff6a00,#ff3c3c)"
                         : "transparent",
                     transition: "0.3s",
+                    
                   }}
                   onClick={() => setMode("ticket")}
                 >

@@ -127,7 +127,7 @@ export default function AutoPlay() {
               <div>
                 <h5 className="fw-bold mb-1">{review.name}</h5>
                 <div className="text-muted small">{review.route}</div>
-                <div className="text-danger small mb-2">
+                <div className="text-corol small mb-2">
                   {review.airline}
                 </div>
                 <p className="mb-0">"{review.text}"</p>
