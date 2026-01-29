@@ -106,7 +106,7 @@ export default function Footer() {
         <div style={styles.logoSection}>
           <img
             style={{ width: "60px", height: "60px" }}
-            src="/BusinessClassLogo.png"
+            src="/photos/BusinessClassLogo.png"
             alt="Travelo Logo"
           />
           <p style={styles.text}>
