@@ -6,34 +6,44 @@ export default function Navbar() {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Deals", path: "/deals" },
-    { name: "Support", path: "/support" },
-    { name: "My Trip", path: "/my-trip" },
+    { name: "HOME", path: "/" },
+    { name: "DEALS", path: "/deals" },
+    { name: "SUPPORT", path: "/support" },
+    { name: "MY TRIP", path: "/my-trip" },
+    { name: "BLOGS", path: "/blogs" },
   ];
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm"
+      className="navbar navbar-expand-lg fixed-top shadow-sm"
       style={{
-        background: "rgba(11, 37, 69, 0.8)",
+        background: "rgba(11, 37, 69, 0.9)",
         backdropFilter: "blur(10px)",
       }}
     >
-      <div className="container-fluid px-4">
+      
+      <style>{`
+        .navbar-toggler {
+          border: none;
+        }
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+      `}</style>
 
+      <div className="container-fluid">
         {/* LOGO */}
         <Link className="navbar-brand" to="/">
           <img
             src="/photos/BusinessClassLogo.png"
             alt="logo"
-            style={{ height: "48px" }}
+            style={{ height: "68px" }}
           />
         </Link>
 
-        {/* TOGGLER (WHITE ICON) */}
+        {/* TOGGLER */}
         <button
-          className="navbar-toggler border-0"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mainNavbar"
@@ -41,17 +51,18 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon "></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* MENU */}
         <div className="collapse navbar-collapse" id="mainNavbar">
-          <ul className="navbar-nav me-auto gap-lg-4 text-center text-lg-start mt-3 mt-lg-0">
+          {/* CENTER LINKS */}
+          <ul className="navbar-nav mx-auto gap-lg-2 text-center mt-3 mt-lg-0">
             {navLinks.map((item) => {
               const isActive = location.pathname === item.path;
 
               return (
-                <li className="nav-item" key={item.name}>
+                <li className="nav-item mx-lg-2" key={item.name}>
                   <Link
                     to={item.path}
                     className="nav-link fw-semibold"
@@ -61,7 +72,6 @@ export default function Navbar() {
                         ? "3px solid #ff8c00"
                         : "3px solid transparent",
                       paddingBottom: "6px",
-                      transform: isActive ? "scale(1.08)" : "scale(1)",
                       transition: "0.3s",
                     }}
                   >
@@ -75,7 +85,7 @@ export default function Navbar() {
           {/* CALL BUTTON */}
           <div className="d-flex justify-content-center mt-3 mt-lg-0">
             <a
-              href="tel:+99999999"
+              href="tel:(866)307-5957"
               style={{
                 background: "linear-gradient(135deg,#ff3c3c,#ff8c00)",
                 color: "white",
@@ -89,7 +99,7 @@ export default function Navbar() {
               }}
             >
               <Phone size={18} />
-              +99999999
+              (866)307-5957
             </a>
           </div>
         </div>

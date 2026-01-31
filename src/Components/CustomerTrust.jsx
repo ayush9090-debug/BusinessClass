@@ -124,7 +124,7 @@ export default function CustomerTrust() {
           </p>
 
           <a
-            href="tel:+189475849"
+            href="tel:(866)307-5957"
             className="btn mt-2"
             style={{
               background: "linear-gradient(135deg,#ff3c3c,#ff8c00)",

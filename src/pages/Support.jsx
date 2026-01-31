@@ -97,11 +97,11 @@ export default function Support() {
 
           <div className="d-flex justify-content-center gap-4 flex-wrap mb-4">
             <a
-              href="tel:+99999999"
+              href="tel:(866)307-5957"
               className="btn  d-flex align-items-center gap-2"
               style={{ background: "linear-gradient(135deg,#ff3c3c,#ff8c00)" }}
             >
-              <Phone size={18} /> +99999999
+              <Phone size={18} /> (866)307-5957
             </a>
 
             <a

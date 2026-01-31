@@ -1,6 +1,4 @@
 import React from "react";
-
-
 import {
   Phone,
   Mail,
@@ -8,6 +6,10 @@ import {
   Globe,
   ShieldCheck,
   HelpCircle,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
 } from "lucide-react";
 
 export default function Footer() {
@@ -33,12 +35,12 @@ export default function Footer() {
     logoImg: {
       width: "160px",
       height: "auto",
-      filter: "brightness(0) invert(1)", 
+      filter: "brightness(0) invert(1)",
     },
     text: {
       fontSize: "0.85rem",
       lineHeight: "1.6",
-      color: "#e0e7ff", 
+      color: "#e0e7ff",
       margin: "0 0 20px 0",
     },
     contactLink: {
@@ -84,7 +86,12 @@ export default function Footer() {
       fontSize: "0.8rem",
       color: "#94a3b8",
     },
-   
+    socialIcons: {
+      display: "flex",
+      justifyContent: "center",
+      gap: "15px",
+      marginBottom: "10px",
+    },
     inlineCSS: `
       .footer-link:hover {
         color: #FFFFFF !important;
@@ -102,7 +109,7 @@ export default function Footer() {
     <footer style={styles.footer}>
       <style>{styles.inlineCSS}</style>
       <div className="footer-grid" style={styles.container}>
-   
+        {/* Logo & Contact */}
         <div style={styles.logoSection}>
           <img
             style={{ width: "60px", height: "60px" }}
@@ -116,11 +123,11 @@ export default function Footer() {
           </p>
           <div>
             <a
-              href="tel:+99999999"
+              href="tel:+18663075957"
               className="contact-item"
               style={styles.contactLink}
             >
-              <Phone size={18} /> +99999999
+              <Phone size={18} /> (866) 307-5957
             </a>
             <a
               href="mailto:info@asktravelo.com"
@@ -132,7 +139,7 @@ export default function Footer() {
           </div>
         </div>
 
-        
+        {/* Quick Links */}
         <div>
           <h4 style={styles.columnTitle}>Quick Links</h4>
           <ul style={styles.list}>
@@ -155,7 +162,7 @@ export default function Footer() {
           </ul>
         </div>
 
-       
+        {/* Trust & Support */}
         <div>
           <h4 style={styles.columnTitle}>Trust & Support</h4>
           <ul style={styles.list}>
@@ -179,19 +186,17 @@ export default function Footer() {
         </div>
       </div>
 
-      
+      {/* Bottom Bar */}
       <div style={styles.bottomBar}>
-        <div
-          style={{
-            marginBottom: "10px",
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-          }}
-        >
-          <Globe size={16} /> <HelpCircle size={16} /> <ShieldCheck size={16} />
+        {/* Social Icons */}
+        <div style={styles.socialIcons}>
+          <Facebook size={20} />
+          <Twitter size={20} />
+          <Instagram size={20} />
+          <Linkedin size={20} />
         </div>
-        <p>© 2026 Business Class. All Rights Reserved. Managed with excellence.</p>
+
+        <p>All records reserved. Managed by Risezonic.</p>
       </div>
     </footer>
   );
