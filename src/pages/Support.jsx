@@ -18,7 +18,7 @@ export default function Support() {
         <div className="mb-5 text-center">
           <h1 className="fw-bold">Flight Support</h1>
           <p className="text-muted">
-            Manage your booking, change travel dates, cancel flights or get help
+            Manage your bookings, change travel dates, cancel flights or get help
             from our support team.
           </p>
         </div>
