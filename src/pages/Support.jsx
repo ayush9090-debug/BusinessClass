@@ -7,7 +7,7 @@ import {
   RefreshCcw,
   Briefcase,
 } from "lucide-react";
-import Footer from "../Components/Footer";
+
 
 export default function Support() {
   return (
@@ -114,7 +114,7 @@ export default function Support() {
         </div>
       </div>
 
-      <Footer />
+      
     </>
   );
 }

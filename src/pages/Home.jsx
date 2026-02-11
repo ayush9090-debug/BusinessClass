@@ -5,7 +5,7 @@ import AutoPlay from "../Components/AutoPlay";
 import FAQ from "../Components/FAQ";
 import ContactUs from "../Components/ContactUs";
 import SocialMediaLinks from "../../SocialMediaLinks";
-import Footer from "../Components/Footer";
+
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <FAQ />
       <ContactUs />
       <SocialMediaLinks />
-      <Footer />
+      
     </>
   );
 }

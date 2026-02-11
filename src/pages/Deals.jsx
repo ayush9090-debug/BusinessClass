@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Footer from "../Components/Footer";
+
 
 
 export default function Deals() {
@@ -161,7 +161,7 @@ export default function Deals() {
         </div>
       </div>
 
-     <Footer /> 
+     
     </>
   );
 }

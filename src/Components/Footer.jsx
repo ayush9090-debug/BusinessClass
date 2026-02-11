@@ -3,9 +3,7 @@ import {
   Phone,
   Mail,
   ChevronRight,
-  Globe,
   ShieldCheck,
-  HelpCircle,
   Facebook,
   Twitter,
   Instagram,
@@ -31,11 +29,6 @@ export default function Footer() {
       display: "flex",
       flexDirection: "column",
       gap: "20px",
-    },
-    logoImg: {
-      width: "160px",
-      height: "auto",
-      filter: "brightness(0) invert(1)",
     },
     text: {
       fontSize: "0.85rem",
@@ -97,6 +90,13 @@ export default function Footer() {
         color: #FFFFFF !important;
         transform: translateX(5px);
       }
+      .footer-link {
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
       @media (max-width: 768px) {
         .footer-grid { text-align: center; }
         .contact-item { justify-content: center; }
@@ -108,13 +108,14 @@ export default function Footer() {
   return (
     <footer style={styles.footer}>
       <style>{styles.inlineCSS}</style>
+
       <div className="footer-grid" style={styles.container}>
         {/* Logo & Contact */}
         <div style={styles.logoSection}>
           <img
             style={{ width: "60px", height: "60px" }}
             src="/photos/BusinessClassLogo.png"
-            alt="Travelo Logo"
+            alt="Logo"
           />
           <p style={styles.text}>
             *Fares include all fuel surcharges, service fees, and taxes. Fares
@@ -122,18 +123,10 @@ export default function Footer() {
             complete.
           </p>
           <div>
-            <a
-              href="tel:+18663075957"
-              className="contact-item"
-              style={styles.contactLink}
-            >
+            <a href="tel:+18663075957" className="contact-item" style={styles.contactLink}>
               <Phone size={18} /> (866) 307-5957
             </a>
-            <a
-              href="mailto:info@asktravelo.com"
-              className="contact-item"
-              style={styles.contactLink}
-            >
+            <a href="mailto:info@asktravelo.com" className="contact-item" style={styles.contactLink}>
               <Mail size={18} /> info@asktravelo.com
             </a>
           </div>
@@ -143,22 +136,36 @@ export default function Footer() {
         <div>
           <h4 style={styles.columnTitle}>Quick Links</h4>
           <ul style={styles.list}>
-            {[
-              "Home",
-              "About Us",
-              "Our Services",
-              "Travel Blogs",
-              "Flight Status",
-              "Contact",
-            ].map((item) => (
-              <li
-                key={item}
-                className="footer-link link-item"
-                style={styles.listItem}
-              >
-                <ChevronRight size={14} /> {item}
-              </li>
-            ))}
+            <li style={styles.listItem}>
+              <a href="/" className="footer-link link-item">
+                <ChevronRight size={14} /> Home
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ChevronRight size={14} /> About Us
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="/services" className="footer-link link-item">
+                <ChevronRight size={14} /> Our Services
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ChevronRight size={14} /> Travel Blogs
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ChevronRight size={14} /> Flight Status
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="/contact-us" className="footer-link link-item">
+                <ChevronRight size={14} /> Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -166,34 +173,47 @@ export default function Footer() {
         <div>
           <h4 style={styles.columnTitle}>Trust & Support</h4>
           <ul style={styles.list}>
-            {[
-              "Privacy Policy",
-              "Terms of Service",
-              "Cancellation Policy",
-              "Help Center",
-              "Travel Advisory",
-              "Feedback",
-            ].map((item) => (
-              <li
-                key={item}
-                className="footer-link link-item"
-                style={styles.listItem}
-              >
-                <ShieldCheck size={14} /> {item}
-              </li>
-            ))}
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ShieldCheck size={14} /> Privacy Policy
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ShieldCheck size={14} /> Terms of Service
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ShieldCheck size={14} /> Cancellation Policy
+              </a>
+            </li>
+            {/* <li style={styles.listItem}>
+              <a href="/help" className="footer-link link-item">
+                <ShieldCheck size={14} /> Help Center
+              </a>
+            </li> */}
+            <li style={styles.listItem}>
+              <a href="/faq" className="footer-link link-item">
+                <ShieldCheck size={14} />FAQ
+              </a>
+            </li>
+            <li style={styles.listItem}>
+              <a href="#" className="footer-link link-item">
+                <ShieldCheck size={14} /> Feedback
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Bar */}
       <div style={styles.bottomBar}>
-        {/* Social Icons */}
         <div style={styles.socialIcons}>
-          <Facebook size={20} />
-          <Twitter size={20} />
-          <Instagram size={20} />
-          <Linkedin size={20} />
+          <a href="#" className="footer-link"><Facebook size={20} /></a>
+          <a href="#" className="footer-link"><Twitter size={20} /></a>
+          <a href="#" className="footer-link"><Instagram size={20} /></a>
+          <a href="#" className="footer-link"><Linkedin size={20} /></a>
         </div>
 
         <p>All records reserved. Managed by Risezonic.</p>
