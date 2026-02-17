@@ -59,8 +59,7 @@ export default function AboutUs() {
                 style={{ height: "330px" }}
               >
                 <img
-                  src="https://i.pinimg.com/736x/49/23/a2/4923a263e0f0c10b26810eb0c19175b8.jpg"
-                  alt="Flight booking"
+                  src="/photos/About-us-ticket.jpg"
                   className="img-fluid w-100 h-100"
                   style={{ objectFit: "cover" }}
                 />
