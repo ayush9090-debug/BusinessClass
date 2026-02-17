@@ -7,10 +7,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "HOME", path: "/" },
-    { name: "DEALS", path: "/deals" },
+    { name: "FLIGHT DEALS", path: "/deals" },
+    { name : "ABOUT US" , path : "/about-us"},
+    { name : "CONTACT US" , path : "/contact-us"},
     { name: "SUPPORT", path: "/support" },
-    { name: "MY TRIP", path: "/my-trip" },
-    { name: "BLOGS", path: "/blogs" },
+    { name: "MY TRIP", path: "/my-trip" }
   ];
 
   return (

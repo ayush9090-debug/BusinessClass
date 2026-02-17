@@ -7,6 +7,7 @@ import MyTrip from "../pages/MyTrip";
 import Deals from "../pages/Deals";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
+import AboutUs from "../pages/AboutUs";
 
 export default function PathRouter() {
   return (
@@ -16,6 +17,8 @@ export default function PathRouter() {
         <Route path="/deals" element={<Deals />} />
         <Route path="/support" element={<Support />} />
         <Route path="/my-trip" element={<MyTrip />} />
+        <Route path="/contact-us" element={<ContactUs />}/>
+        <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/contact-us" element={<ContactUs />}/>
         <Route path="/faq" element={<FAQ />}/>
       </Routes>

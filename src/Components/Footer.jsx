@@ -142,17 +142,17 @@ export default function Footer() {
               </a>
             </li>
             <li style={styles.listItem}>
-              <a href="#" className="footer-link link-item">
+              <a href="/about-us" className="footer-link link-item">
                 <ChevronRight size={14} /> About Us
               </a>
             </li>
             <li style={styles.listItem}>
-              <a href="/services" className="footer-link link-item">
-                <ChevronRight size={14} /> Our Services
+              <a href="/support" className="footer-link link-item">
+                <ChevronRight size={14} />Support
               </a>
             </li>
             <li style={styles.listItem}>
-              <a href="#" className="footer-link link-item">
+              <a href="/blogs" className="footer-link link-item">
                 <ChevronRight size={14} /> Travel Blogs
               </a>
             </li>
