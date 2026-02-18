@@ -57,14 +57,13 @@ export default function CustomerTrust() {
           }}
         >
           <h2 className="fw-bold mb-3">
-            Business Class is Trusted by
-            <span className="text-corol">188K+</span> Travelers
+            Business Class Travel Specialists Dedicated To You
+            
           </h2>
 
           <p className="text-muted">
-            Welcome to Business Class! Our commitment is to provide our clients
-            with excellent personal service, 24 hours a day, 7 days a week.
-          </p>
+            We are experts in discounted business and first-class fares from the US to all major international destinations. All of our travel advisors exclusively negotiate unpublished fares that save you 40% or more when flying in a premium cabin.
+            </p>
 
           <div className="d-flex gap-4 mt-4">
             <div>
@@ -115,12 +114,11 @@ export default function CustomerTrust() {
           }}
         >
           <h4 className="fw-bold mb-3">
-            Expert First & Business Class Travel Management
+             Personalized Discount Business & First Class Flight Booking
           </h4>
 
           <p className="text-muted">
-            At Business Class, you get your personal travel manager who designs
-            your perfect journey.
+            Experience top-class service from our travel experts as they work to help you get exclusive unpublished rates on your international travel. With our ability to negotiate on behalf of clients, you will receive substantial discounts on premium seating tickets versus the price listed by the airline. Whether for business or leisure travel, Premium-Class Travel is ready to assist you!
           </p>
 
           <a

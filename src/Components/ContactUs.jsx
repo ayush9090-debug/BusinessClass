@@ -19,7 +19,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="bg-light py-5 mt-5">
+    <div className="bg-light py-5" style={{marginTop:"80px"}}>
       <div className="container">
         <div className="row align-items-center g-5">
           

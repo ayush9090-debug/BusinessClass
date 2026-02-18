@@ -106,7 +106,7 @@ export default function Banner() {
       <div className="container position-relative text-center px-3">
         {/* Heading */}
         <h1 className="fw-bold mb-2 banner-title">
-          Fly Business & First Class For Less
+          Get Luxury Business & First Class flights deals 
         </h1>
 
         <p className="opacity-75 mb-4 banner-subtitle">

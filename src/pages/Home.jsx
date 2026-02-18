@@ -5,6 +5,8 @@ import AutoPlay from "../Components/AutoPlay";
 import FAQ from "../Components/FAQ";
 import ContactUs from "../Components/ContactUs";
 import SocialMediaLinks from "../../SocialMediaLinks";
+import PolularDestination from "../Components/PolularDestination";
+import Discound from "../Components/Discound";
 
 
 export default function Home() {
@@ -12,10 +14,12 @@ export default function Home() {
     <>
       <Banner />
       <CustomerTrust />
-      <AutoPlay />
-      <FAQ />
       <ContactUs />
-      <SocialMediaLinks />
+      {/* <SocialMediaLinks /> */}
+      <Discound />
+      <PolularDestination />
+      <FAQ />
+      <AutoPlay />
       
     </>
   );

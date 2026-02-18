@@ -8,6 +8,9 @@ import Deals from "../pages/Deals";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 import AboutUs from "../pages/AboutUs";
+import PrivacyPolicy from "../pages/ProvicyPolicy";
+import TermCondition from "../pages/TermsCondition";
+import NotFound from "../pages/NotFound";
 
 export default function PathRouter() {
   return (
@@ -21,6 +24,9 @@ export default function PathRouter() {
         <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/contact-us" element={<ContactUs />}/>
         <Route path="/faq" element={<FAQ />}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
+        <Route path="term&condition" element={<TermCondition/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

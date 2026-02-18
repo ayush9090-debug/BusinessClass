@@ -1,4 +1,5 @@
 import React from "react";
+import {FaYoutube} from "react-icons/fa"
 import {
   Phone,
   Mail,
@@ -174,13 +175,13 @@ export default function Footer() {
           <h4 style={styles.columnTitle}>Trust & Support</h4>
           <ul style={styles.list}>
             <li style={styles.listItem}>
-              <a href="#" className="footer-link link-item">
+              <a href="/privacy-policy" className="footer-link link-item">
                 <ShieldCheck size={14} /> Privacy Policy
               </a>
             </li>
             <li style={styles.listItem}>
-              <a href="#" className="footer-link link-item">
-                <ShieldCheck size={14} /> Terms of Service
+              <a href="term&condition" className="footer-link link-item">
+                <ShieldCheck size={14} /> Terms&Condition
               </a>
             </li>
             <li style={styles.listItem}>
@@ -211,7 +212,7 @@ export default function Footer() {
       <div style={styles.bottomBar}>
         <div style={styles.socialIcons}>
           <a href="#" className="footer-link"><Facebook size={20} /></a>
-          <a href="#" className="footer-link"><Twitter size={20} /></a>
+          <a href="#" className="footer-link"><FaYoutube size={20} /></a>
           <a href="#" className="footer-link"><Instagram size={20} /></a>
           <a href="#" className="footer-link"><Linkedin size={20} /></a>
         </div>

@@ -10,7 +10,7 @@ export default function Navbar() {
     { name: "FLIGHT DEALS", path: "/deals" },
     { name : "ABOUT US" , path : "/about-us"},
     { name : "CONTACT US" , path : "/contact-us"},
-    { name: "SUPPORT", path: "/support" },
+    
     { name: "MY TRIP", path: "/my-trip" }
   ];
 
