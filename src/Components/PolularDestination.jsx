@@ -35,7 +35,7 @@ const businessClassDestinations = [
     title: "Business Class Flights to New York",
     description:
       "Luxury travel throughout Asia with ticket flexibility and personalized assistance in booking.",
-    image: "/photos/asia.jpg",
+    image: "/photos/New-york.jpg.jpeg",
   },
 ];
 
