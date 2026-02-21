@@ -161,9 +161,9 @@ export default function Footer() {
               ["Contact", "/contact-us"],
             ].map(([name, link], index) => (
               <li key={index} style={{ marginBottom: "12px" }}>
-                <Link to ={link} className="footer-link">
+                <a href ={link} className="footer-link">
                   <ChevronRight size={14} /> {name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
