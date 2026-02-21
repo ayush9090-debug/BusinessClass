@@ -11,7 +11,7 @@ export default function Navbar() {
     { name : "ABOUT US" , path : "/about-us"},
     { name : "CONTACT US" , path : "/contact-us"},
     
-    { name: "Flight Status", path: "/fLIGHT-STATUS" }
+    { name: "FLIGHT STATUS", path: "/flight-status" }
   ];
 
   return (
