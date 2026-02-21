@@ -23,13 +23,13 @@ const businessClassDestinations = [
     title: "Business Class Flights to India",
     description:
       "Save money on all long-haul (greater than 6 hours) flights to Delhi, Mumbai, and other key areas of India.",
-    image: "public/photos/India.jpg.jpeg",
+    image: "photos/India.jpg.jpeg",
   },
   {
     title: "Business Class Flights to Japan",
     description:
       "Discover exclusive business class fares from major U.S. cities to the most popular travel destinations in Japan.",
-    image: "public/photos/Japan.jpg.jpeg",
+    image: "photos/Japan.jpg.jpeg",
   },
   {
     title: "Business Class Flights to New York",
