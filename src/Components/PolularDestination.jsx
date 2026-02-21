@@ -1,5 +1,5 @@
-import React from 'react'
-import "../../public/CSS/style.css"
+import React from "react";
+import "../../public/CSS/style.css";
 const businessClassDestinations = [
   {
     title: "Business Class Flights to London",
@@ -23,13 +23,13 @@ const businessClassDestinations = [
     title: "Business Class Flights to India",
     description:
       "Save money on all long-haul (greater than 6 hours) flights to Delhi, Mumbai, and other key areas of India.",
-    image: "photos/India.jpg.jpeg",
+    image: "/photos/India.jpg.jpeg",
   },
   {
     title: "Business Class Flights to Japan",
     description:
       "Discover exclusive business class fares from major U.S. cities to the most popular travel destinations in Japan.",
-    image: "photos/Japan.jpg.jpeg",
+    image: "/photos/Japan.jpg.jpeg",
   },
   {
     title: "Business Class Flights to New York",
@@ -39,58 +39,52 @@ const businessClassDestinations = [
   },
 ];
 
-
 export default function PolularDestination() {
   return (
-   <>
-    <section className="py-5 bg-white">
-  <div className="container">
+    <>
+      <section className="py-5 bg-white">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="fw-bold display-6">
+              Popular Business Class Flight Destinations
+            </h2>
+            <p
+              className="text-muted mt-2 mx-auto"
+              style={{ maxWidth: "700px" }}
+            >
+              Discover the most requested international business class routes
+              from the United States.
+            </p>
+          </div>
 
-    <div className="text-center mb-5">
-      <h2 className="fw-bold display-6">
-        Popular Business Class Flight Destinations
-      </h2>
-      <p className="text-muted mt-2 mx-auto" style={{ maxWidth: "700px" }}>
-        Discover the most requested international business class routes from the United States.
-      </p>
-    </div>
+          <div className="row g-4">
+            {businessClassDestinations.map((item, index) => (
+              <div className="col-12 col-md-6 col-lg-4" key={index}>
+                <div className="card h-100 border-0 shadow-sm destination-card">
+                  {/* Image wrapper */}
+                  <div className="image-wrapper">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="destination-img"
+                    />
+                  </div>
 
-    <div className="row g-4">
-      {businessClassDestinations.map((item, index) => (
-        <div className="col-12 col-md-6 col-lg-4" key={index}>
-          <div className="card h-100 border-0 shadow-sm destination-card">
-
-            {/* Image wrapper */}
-            <div className="image-wrapper">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="destination-img"
-              />
-            </div>
-
-            <div className="card-body d-flex flex-column">
-              <h5 className="fw-semibold mb-2">✈ {item.title}</h5>
-              <p className="text-muted small flex-grow-1">
-                {item.description}
-              </p>
-              <button className="btn btn-outline-primary btn-sm mt-3 align-self-start">
-                View Deals
-              </button>
-            </div>
-
+                  <div className="card-body d-flex flex-column">
+                    <h5 className="fw-semibold mb-2">✈ {item.title}</h5>
+                    <p className="text-muted small flex-grow-1">
+                      {item.description}
+                    </p>
+                    <button className="btn btn-outline-primary btn-sm mt-3 align-self-start">
+                      View Deals
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-   </>
-  )
+      </section>
+    </>
+  );
 }
