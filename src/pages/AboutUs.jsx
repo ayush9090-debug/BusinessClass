@@ -10,9 +10,8 @@ import {
 export default function AboutUs() {
   return (
     <>
-      {/* HERO SECTION */}
       <div
-        className="container-fluid p-0"
+        className="container-fluid p-0 position-relative"
         style={{
           height: "100vh",
           backgroundImage: "url(/photos/Business_Class_Banner_2.jpg.jpeg)",
@@ -20,114 +19,104 @@ export default function AboutUs() {
           backgroundSize: "cover",
         }}
       >
-        <div className="vh-100 d-flex justify-content-center align-items-center">
-          <div className="text-light text-center vw-100">
-            <h1 className="fw-bold display-4">Your Journey Start With Trust</h1>
-            <p className="lead mt-4 text-light fw-bold">
-              At Airlines Ticket Booking, we are dedicated to making your dream
-              vacation an affordable reality.
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ background: "rgba(0,0,0,0.55)" }}
+        ></div>
+
+        <div className="vh-100 d-flex justify-content-center align-items-center position-relative">
+          <div className="text-light text-center container">
+            <h1 className="fw-bold display-4">
+              About Our Business Class Travel Specialists
+            </h1>
+            <p className="lead mt-4 fw-semibold">
+              Delivering personalized discount business and first class flight
+              solutions for travelers across the United States.
             </p>
           </div>
         </div>
       </div>
 
-      {/* INTRO */}
-      <div className="container-fluid mt-5">
-        <h2 className="text-center fw-bold mb-4">
-          Your Trusted Travel Partner
-        </h2>
-
-        <div className="container">
-          <p className="text-center lead">
-            At Airlines Ticket Booking, we believe that traveling should be
-            simple, affordable, and stress-free. Our mission is to help
-            travelers book flights easily with the best prices and reliable
-            services.
+      <section className="py-5">
+        <div className="container text-center">
+          <h2 className="fw-bold mb-4">
+            Why Book Business Class Flights With Us?
+          </h2>
+          <p className="lead text-muted">
+            At Business Class Flights, we believe travel should be simple,
+            affordable, and stress-free. Our mission is to help travelers book
+            discounted business and first-class tickets easily, with competitive
+            pricing and dependable, personalized service.
           </p>
         </div>
-      </div>
+      </section>
 
-      {/* IMAGE + CONTENT SECTION */}
-      <section className="container-fluid py-5">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="row g-4 align-items-stretch">
-
-            {/* LEFT IMAGE */}
-            <div className="col-md-6 d-flex">
+          <div className="row align-items-center g-5">
+            {/* Image Column */}
+            <div className="col-md-6">
               <div
-                className="w-100 overflow-hidden rounded-3"
-                style={{ height: "330px" }}
+                className="rounded-4 shadow overflow-hidden"
+                style={{ height: "350px" }} 
               >
                 <img
                   src="/photos/About-us-ticket.jpg"
-                  className="img-fluid w-100 h-100"
+                  alt="About"
+                  className="w-100 h-100"
                   style={{ objectFit: "cover" }}
                 />
               </div>
             </div>
 
-            {/* RIGHT CONTENT */}
-            <div className="col-md-6 d-flex align-items-center">
-              <div>
-                <h2 className="fw-bold mb-3">
-                  Making Air Travel Simple & Affordable
-                </h2>
-
-                <p>
-                  Airlines Ticket Booking is built with one goal in mind – to
-                  simplify the way people book flights. We help travelers
-                  discover the best routes, compare prices, and book tickets
-                  without any hassle.
-                </p>
-
-                <p>
-                  Our platform connects you with multiple airlines, ensuring
-                  you always get flexible options and transparent pricing.
-                  From short domestic trips to long international journeys,
-                  we make sure your booking experience remains smooth and
-                  reliable.
-                </p>
-
-                <p>
-                  We continuously work on improving our technology so that
-                  users can search faster, filter better, and make informed
-                  decisions with real-time flight information.
-                </p>
-
-                <p className="fw-semibold text-success mb-0">
-                  Fly smarter, travel better – with Airlines Ticket Booking.
-                </p>
-              </div>
+            {/* Content Column */}
+            <div className="col-md-6">
+              <h2 className="fw-bold mb-3">Who We Are</h2>
+              <p>
+                Business Class Flights is a travel agency that focuses on
+                corporate and/or personal management of travel to help customers
+                with their discounted, high-end business class and first class
+                airfares and connecting travel; our team of experienced travel
+                consultants works directly with most airlines to obtain
+                exclusive fares as well as flexible travel for our clients.
+              </p>
+              <p>
+                As your personal travel consultant, we’re committed to offering
+                exceptional service, great value with the lowest price for all
+                of your travel needs, and outstanding customer service to make
+                every travel experience pleasant, safe, and hassle-free.
+              </p>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* MISSION / VISION */}
-      <section className="py-5 bg-light">
+      <section className="py-5">
         <div className="container">
           <div className="row g-4">
             <div className="col-md-6">
-              <div className="p-4 border rounded-3 h-100">
+              <div className="p-4 border rounded-4 shadow-sm h-100">
                 <h4 className="fw-semibold mb-3">Our Mission</h4>
                 <p>
-                  Our mission is to build high-quality digital products that
-                  solve real-world problems, enhance user experience, and help
-                  businesses grow through innovative technology and efficient
-                  solutions.
+                  Our mission is to help all travelers find business class fares
+                  at an affordable price and make it easier for them to book as
+                  well. We strive to provide exceptional travel deals and
+                  personalized services to each traveler while ensuring that
+                  they will have an enjoyable travel experience with us and that
+                  their money will be well spent.
                 </p>
               </div>
             </div>
 
             <div className="col-md-6">
-              <div className="p-4 border rounded-3 h-100">
+              <div className="p-4 border rounded-4 shadow-sm h-100">
                 <h4 className="fw-semibold mb-3">Our Vision</h4>
                 <p>
-                  Our vision is to become a trusted technology partner known
-                  for creativity, performance, and long-term value, while
-                  continuously evolving with modern tools and industry
-                  standards.
+                  We want to be a leader in premium travel services which
+                  provide value and transparent pricing. Aiming to redefine the
+                  way travelers book business class flights, we are committed to
+                  creating a new experience that combines luxury travel with
+                  simplicity, dependability, and value for money.
                 </p>
               </div>
             </div>
@@ -135,58 +124,102 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* VALUES */}
-      <section className="container py-5">
-        <h1 className="text-center fw-bold mb-4">Our Values</h1>
+      <section
+        className="py-5 text-white"
+        style={{
+          background: "linear-gradient(135deg, #0d1b2a, #1b263b)",
+        }}
+      >
+        <div className="container py-4">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
+              <h2 className="fw-bold display-5 mb-4">
+                Why Choose Business Class Flights
+              </h2>
 
-        <div className="row g-4">
-          <div className="col-md-3">
-            <div className="text-center border p-4 rounded-3 h-100">
-              <Globe size={36} className="text-primary" />
-              <h5 className="mt-3 fw-semibold">Global Reach</h5>
-              <p>
-                Connecting you to 500+ destinations worldwide with seamless
-                and reliable connectivity.
-              </p>
+              <ul className="list-unstyled fs-5">
+                <li className="mb-3">
+                  ✅ Exclusive business class deals without needing to be a
+                  frequent flyer.
+                </li>
+                <li className="mb-3">
+                  ✅ Dedicated expert support available 24/7.
+                </li>
+                <li className="mb-3">
+                  ✅ Flexible ticketing options tailored to your needs.
+                </li>
+                <li className="mb-3">
+                  ✅ Transparent pricing with no hidden surprises.
+                </li>
+                <li className="mb-4">
+                  ✅ Simple, fast, and completely secure booking process.
+                </li>
+              </ul>
+
+              <a
+                href="tel: (866)307-5957"
+                className="btn btn-light btn-lg rounded-pill px-4 fw-semibold btn-color"
+              >
+                Book Your Business Class Today
+              </a>
             </div>
-          </div>
 
-          <div className="col-md-3">
-            <div className="text-center border p-4 rounded-3 h-100">
-              <ChartNoAxesCombined size={36} className="text-success" />
-              <h5 className="mt-3 fw-semibold">Luxury & Comfort</h5>
-              <p>
-                Spacious premium seating, refined interiors, and personalized
-                services for a truly relaxing flying experience.
-              </p>
-            </div>
-          </div>
-
-          <div className="col-md-3">
-            <div className="text-center border p-4 rounded-3 h-100">
-              <HandPlatter size={36} className="text-warning" />
-              <h5 className="mt-3 fw-semibold">Safety & Reliability</h5>
-              <p>
-                Operated with the highest safety standards and on-time
-                performance you can trust.
-              </p>
-            </div>
-          </div>
-
-          <div className="col-md-3">
-            <div className="text-center border p-4 rounded-3 h-100">
-              <TrendingUp size={36} className="text-info" />
-              <h5 className="mt-3 fw-semibold">Excellence in Service</h5>
-              <p>
-                Dedicated cabin crew delivering world-class hospitality at
-                every step of your journey.
-              </p>
+            <div className="col-lg-6 text-center">
+              <img
+                src="/photos/Mega_sale.jpg"
+                alt="Business Class"
+                className="img-fluid rounded-4 shadow-lg" style={{height:"350px", width:"570px"}}
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <FAQ />
+      <section className="container py-5">
+        <h1 className="text-center fw-bold mb-5">Our Values</h1>
+
+        <div className="row g-4">
+          <div className="col-md-3">
+            <div className="text-center border p-4 rounded-4 shadow-sm h-100">
+              <TrendingUp size={36} className="text-info" />
+              <h5 className="mt-3 fw-semibold">Customer First Approach</h5>
+              <p>
+                We prioritize our clients’ comfort, savings, and satisfaction by
+                offering personalized travel solutions and dedicated support.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="text-center border p-4 rounded-4 shadow-sm h-100">
+              <HandPlatter size={36} className="text-warning" />
+              <h5 className="mt-3 fw-semibold">Transparency & Trust</h5>
+              <p>We believe in honest pricing with no hidden fees.</p>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="text-center border p-4 rounded-4 shadow-sm h-100">
+              <ChartNoAxesCombined size={36} className="text-success" />
+              <h5 className="mt-3 fw-semibold">Excellence in Service</h5>
+              <p>
+                Our experienced travel consultants deliver seamless booking
+                assistance.
+              </p>
+            </div>
+          </div>
+
+          <div className="col-md-3">
+            <div className="text-center border p-4 rounded-4 shadow-sm h-100">
+              <Globe size={36} className="text-primary" />
+              <h5 className="mt-3 fw-semibold">Global Expertise</h5>
+              <p>
+                Strong airline partnerships provide access to exclusive deals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

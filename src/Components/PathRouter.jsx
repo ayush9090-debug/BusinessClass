@@ -19,7 +19,7 @@ export default function PathRouter() {
         <Route path="/" element={<Home />} />
         <Route path="/deals" element={<Deals />} />
         <Route path="/support" element={<Support />} />
-        <Route path="/my-trip" element={<MyTrip />} />
+        <Route path="/flight-status" element={<MyTrip />} />
         <Route path="/contact-us" element={<ContactUs />}/>
         <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/contact-us" element={<ContactUs />}/>
