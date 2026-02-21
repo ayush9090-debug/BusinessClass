@@ -10,6 +10,7 @@ import {
   Linkedin,
   MapPin,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const styles = {
@@ -160,9 +161,9 @@ export default function Footer() {
               ["Contact", "/contact-us"],
             ].map(([name, link], index) => (
               <li key={index} style={{ marginBottom: "12px" }}>
-                <a href={link} className="footer-link">
+                <Link to ={link} className="footer-link">
                   <ChevronRight size={14} /> {name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
