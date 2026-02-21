@@ -166,7 +166,7 @@ export default function AboutUs() {
 
             <div className="col-lg-6 text-center">
               <img
-                src="/photos/Mega_sale.jpg"
+                src="/photos/Why-choose-business-class-flights.jpg.jpeg"
                 alt="Business Class"
                 className="img-fluid rounded-4 shadow-lg" style={{height:"350px", width:"570px"}}
               />
