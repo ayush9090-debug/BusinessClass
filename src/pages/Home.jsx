@@ -7,11 +7,17 @@ import ContactUs from "../Components/ContactUs";
 import SocialMediaLinks from "../../SocialMediaLinks";
 import PolularDestination from "../Components/PolularDestination";
 import Discound from "../Components/Discound";
+import { Helmet } from "react-helmet";
 
 
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title></title>
+        <meta name="description" content=""/>
+        <link rel="canonical" href="" />
+      </Helmet>
       <Banner />
       <CustomerTrust />
       <ContactUs />

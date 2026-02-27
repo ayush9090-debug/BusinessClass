@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 
@@ -41,7 +42,11 @@ export default function Deals() {
 
   return (
     <>
-      {/* HERO SECTION */}
+      <Helmet>
+        <title></title>
+        <meta name="description" content=""/>
+        <link rel="canonical" href="" />
+      </Helmet>
       <div
         className="container-fluid p-0"
         style={{
