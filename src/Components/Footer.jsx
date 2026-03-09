@@ -192,13 +192,13 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div style={styles.bottomBar}>
         <div style={styles.socialIcons}>
-          <a href="https://www.facebook.com/businessclassticket1/" className="footer-link">
+          <a href="https://www.facebook.com/businessclassflights1/" className="footer-link">
             <Facebook size={20} />
           </a>
           <a href="https://www.youtube.com/@businessclassticket" className="footer-link">
             <FaYoutube size={20} />
           </a>
-          <a href="https://www.instagram.com/businessclassticket/" className="footer-link">
+          <a href="https://www.instagram.com/businessclassflights01/" className="footer-link">
             <Instagram size={20} />
           </a>
           <a href="https://www.linkedin.com/company/business-class-ticket/" className="footer-link">

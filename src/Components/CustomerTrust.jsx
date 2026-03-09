@@ -57,8 +57,7 @@ export default function CustomerTrust() {
           }}
         >
           <h2 className="fw-bold mb-3">
-            Business Class Travel Specialists Dedicated To You
-            
+            Business Class Travel Specialists Dedicated To You.
           </h2>
 
           <p className="text-muted">
