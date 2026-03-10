@@ -195,7 +195,7 @@ export default function Footer() {
           <a href="https://www.facebook.com/businessclassflights1/" className="footer-link">
             <Facebook size={20} />
           </a>
-          <a href="https://www.youtube.com/@businessclassticket" className="footer-link">
+          <a href="https://www.youtube.com/@businessclassflights/" className="footer-link">
             <FaYoutube size={20} />
           </a>
           <a href="https://www.instagram.com/businessclassflights01/" className="footer-link">

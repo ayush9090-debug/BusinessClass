@@ -15,7 +15,7 @@ export default function Home() {
       <Helmet>
         <title>Business Class Flights | Discount International Premium Tickets</title>
         <meta name="description" content="Book premium Business Class Flights at discounted prices worldwide. Save up to 40% on international tickets with expert support and secure booking assistance."/>
-        <link rel="canonical" href="https://www.business-classflights.com/" />
+        <link rel="canonical" href="https://www.business-classflights.com" />
       </Helmet>
       <Banner />
       <CustomerTrust />
