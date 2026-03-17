@@ -49,7 +49,7 @@ export default function Home() {
       </Helmet>
       <Banner />
       <CustomerTrust />
-      {/* <ContactUs /> */}
+      
       <Discound />
       <PolularDestination />
        <div className="bg-white">
