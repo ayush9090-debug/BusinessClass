@@ -13,8 +13,24 @@ export default function AboutUs() {
     <>
       <Helmet>
         <title>About Business Class Flights | Travel Experts</title>
-        <meta name="description" content="Learn about our Business Class Flights agency specializing in discounted international premium tickets, personalized service, and reliable travel support."/>
+        <meta name="description" content="Learn about our Business Class Flights agency specializing in discounted international premium tickets, personalized service, and reliable travel support." />
         <link rel="canonical" href="https://www.business-classflights.com/about-us" />
+        <script type="application/ld+json">
+          {`{
+"@context":"https://schema.org",
+"@type":"AboutPage",
+"name":"About Business Class Flights",
+"url":"https://www.business-classflights.com/about-us",
+"description":"Learn about Business Class Flights, a travel agency specializing in discounted business class and first class airline tickets for international travel.",
+"publisher":{
+"@type":"TravelAgency",
+"name":"Business Class Flights",
+"url":"https://www.business-classflights.com"
+}
+}`}
+        </script>
+
+
       </Helmet>
       <div
         className="container-fluid p-0 position-relative"
@@ -64,7 +80,7 @@ export default function AboutUs() {
             <div className="col-md-6">
               <div
                 className="rounded-4 shadow overflow-hidden"
-                style={{ height: "350px" }} 
+                style={{ height: "350px" }}
               >
                 <img
                   src="/photos/About-us-ticket.jpg"
@@ -174,7 +190,7 @@ export default function AboutUs() {
               <img
                 src="/photos/Why-choose-business-class-flights.jpg.jpeg"
                 alt="Business Class"
-                className="img-fluid rounded-4 shadow-lg" style={{height:"350px", width:"570px"}}
+                className="img-fluid rounded-4 shadow-lg" style={{ height: "350px", width: "570px" }}
               />
             </div>
           </div>
@@ -182,7 +198,7 @@ export default function AboutUs() {
       </section>
 
       <section className="container py-5">
-        <h1 className="text-center fw-bold mb-5">Our Values</h1>
+        <h2 className="text-center fw-bold mb-5">Our Values</h2>
 
         <div className="row g-4">
           <div className="col-md-3">
