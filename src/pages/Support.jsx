@@ -7,7 +7,7 @@ import {
   RefreshCcw,
   Briefcase,
 } from "lucide-react";
-
+import {Helmet} from 'react-helmet'
 
 export default function Support() {
   return (

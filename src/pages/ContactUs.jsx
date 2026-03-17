@@ -7,7 +7,7 @@ export default function ContactUs() {
     phone: "",
     message: "",
   });
-  
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -22,8 +22,33 @@ export default function ContactUs() {
     <>
       <Helmet>
         <title>Contact Business Class Flights | 24/7 Booking Support</title>
-        <meta name="description" content="Contact with  Business Class Flights for expert booking assistance, fare inquiries, and premium travel support. Our team is available to help with your travel needs."/>
+        <meta name="description" content="Contact with  Business Class Flights for expert booking assistance, fare inquiries, and premium travel support. Our team is available to help with your travel needs." />
         <link rel="canonical" href="https://www.business-classflights.com/contact-us" />
+        <script type="application/ld+json">
+          {
+            `{
+"@context":"https://schema.org",
+"@type":"ContactPage",
+"name":"Contact Business Class Flights",
+"url":"https://www.business-classflights.com/contact-us",
+"publisher":{
+"@type":"TravelAgency",
+"name":"Business Class Flights",
+"url":"https://www.business-classflights.com"
+},
+"contactPoint":{
+"@type":"ContactPoint",
+"telephone":"+1-866-307-5957",
+"contactType":"customer support",
+"email":"info@asktravelo.com",
+"areaServed":"US",
+"availableLanguage":"English"
+}
+}`
+          }
+        </script>
+
+
       </Helmet>
       <div className="bg-light py-5" style={{ marginTop: "80px" }}>
         <div className="container">
@@ -31,9 +56,9 @@ export default function ContactUs() {
             {/* Left content */}
             <div className="col-lg-5">
               <h1 className="text-uppercase text-muted">Contact Us</h1>
-              <h3 className="fw-bold mb-3">
+              <h2 className="fw-bold mb-3">
                 Talk to our Business Class Experts
-              </h3>
+              </h2>
               <p className="text-muted">
                 Need help finding the best business class fares or planning your
                 trip? Send us your details and our team will get back to you

@@ -84,7 +84,6 @@ export default function Footer() {
       .contact-item:hover {
         color: #ffffff;
       }
-
       .address {
         display: flex;
         gap: 10px;
@@ -158,14 +157,14 @@ export default function Footer() {
               ["About Us", "/about-us"],
               ["Support", "/support"],
               ["Travel Blogs", "/blogs"],
-              
+
             ].map(([name, link], index) => (
               <li key={index} style={{ marginBottom: "12px" }}>
-                <a href = {link} className="footer-link">
+                <a href={link} className="footer-link">
                   <ChevronRight size={14} /> {name}
                 </a>
               </li>
-            ))}
+            ))} 
           </ul>
         </div>
 
@@ -175,7 +174,7 @@ export default function Footer() {
           <ul style={styles.list}>
             {[
               ["Privacy Policy", "/privacy-policy"],
-              ["Terms & Condition", "/term&condition"],
+              ["Terms & Condition", "/term-condition"],
               ["FAQ", "/faq"],
               ["Contact", "/contact-us"],
             ].map(([name, link], index) => (
@@ -204,7 +203,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/company/business-class-ticket/" className="footer-link">
             <Linkedin size={20} />
           </a>
-           <a href="https://www.pinterest.com/businessclassticket/" className="footer-link">
+          <a href="https://www.pinterest.com/businessclassticket/" className="footer-link">
             <FaPinterest size={20} />
           </a>
         </div>

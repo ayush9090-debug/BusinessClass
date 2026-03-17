@@ -44,8 +44,34 @@ export default function Deals() {
     <>
       <Helmet>
         <title>Business Class Flight Deals | Save on Premium Airfare</title>
-        <meta name="description" content="Discover exclusive Business Class Flight Deals with major airlines. Save on international premium airfare with flexible options and personalized booking support."/>
+        <meta name="description" content="Discover exclusive Business Class Flight Deals with major airlines. Save on international premium airfare with flexible options and personalized booking support." />
         <link rel="canonical" href="https://www.business-classflights.com/flights-deals" />
+        <script type="application/ld+json">
+          {`{
+"@context":"https://schema.org",
+"@type":"Service",
+"name":"Business Class Flight Deals",
+"url":"https://www.business-classflights.com/flights-deals",
+"description":"Explore discounted business class and first class flight deals for international travel with expert booking assistance and premium airline options.",
+"provider":{
+"@type":"TravelAgency",
+"name":"Business Class Flights",
+"url":"https://www.business-classflights.com"
+},
+"areaServed":{
+"@type":"Country",
+"name":"United States"
+},
+"offers":{
+"@type":"Offer",
+"availability":"https://schema.org/InStock",
+"priceCurrency":"USD",
+"url":"https://www.business-classflights.com/flights-deals"
+}
+}`}
+        </script>
+
+
       </Helmet>
       <div
         className="container-fluid p-0"
@@ -83,22 +109,21 @@ export default function Deals() {
             (item) => (
               <button
                 key={item}
-                className={`btn ${
-                  tab === item
+                className={`btn ${tab === item
                     ? "btn-color text-light"
                     : "btn-outline-btn-color"
-                }`}
+                  }`}
                 onClick={() => setTab(item)}
               >
                 {item === "all"
                   ? "All Deals"
                   : item === "international"
-                  ? "International"
-                  : item === "domestic"
-                  ? "Domestic"
-                  : item === "student"
-                  ? "Student"
-                  : "Last Minute"}
+                    ? "International"
+                    : item === "domestic"
+                      ? "Domestic"
+                      : item === "student"
+                        ? "Student"
+                        : "Last Minute"}
               </button>
             )
           )}
@@ -117,9 +142,9 @@ export default function Deals() {
                   />
                 </div>
                 <div className="col-md-6 p-4 d-flex flex-column justify-content-center">
-                  <h2 className="fw-bold mb-2">
-                    Mega International Sale 
-                  </h2>
+                  <h3 className="fw-bold mb-2">
+                    Mega International Sale
+                  </h3>
                   <p className="text-muted">
                     Fly worldwide with premium airlines at special discounted
                     fares. Limited time only.
@@ -166,7 +191,7 @@ export default function Deals() {
         </div>
       </div>
 
-     
+
     </>
   );
 }

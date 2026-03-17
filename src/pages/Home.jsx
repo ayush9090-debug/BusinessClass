@@ -46,6 +46,117 @@ export default function Home() {
         <title>Business Class Flights | Discount International Premium Tickets</title>
         <meta name="description" content="Book premium Business Class Flights at discounted prices worldwide. Save up to 40% on international tickets with expert support and secure booking assistance."/>
         <link rel="canonical" href="https://www.business-classflights.com/" />
+        <script type="application/ld+json">
+{
+  `{
+"@context": "https://schema.org",
+"@graph":[
+
+{
+"@type":"Organization",
+"@id":"https://www.business-classflights.com/#organization",
+"name":"Business Class Flights",
+"url":"https://www.business-classflights.com/",
+"logo":"https://www.business-classflights.com/photos/BUSINESS-CLASS-FLIGHTS-LOGO.png",
+"foundingDate":"2025",
+"contactPoint":{
+"@type":"ContactPoint",
+"telephone":"+1-866-307-5957",
+"contactType":"customer support",
+"areaServed":"US",
+"availableLanguage":"English"
+},
+"sameAs":[
+"https://www.facebook.com/businessclassticket1/",
+"https://www.instagram.com/businessclassticket/",
+"https://www.linkedin.com/company/business-class-ticket/",
+"https://www.pinterest.com/businessclassticket/",
+"https://www.youtube.com/@businessclassticket"
+]
+},
+
+{
+"@type":"TravelAgency",
+"@id":"https://www.business-classflights.com/#travelagency",
+"name":"Business Class Flights",
+"url":"https://www.business-classflights.com/",
+"logo":"https://www.business-classflights.com/photos/BUSINESS-CLASS-FLIGHTS-LOGO.png",
+"telephone":"+1-866-307-5957",
+"email":"info@asktravelo.com",
+"priceRange":"$$$",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"17662 Irvine Blvd, Suite 9",
+"addressLocality":"Tustin",
+"addressRegion":"CA",
+"postalCode":"92780",
+"addressCountry":"US"
+},
+"openingHours":"Mo-Su 00:00-23:59",
+"areaServed":{
+"@type":"Country",
+"name":"United States"
+}
+},
+
+{
+"@type":"WebSite",
+"@id":"https://www.business-classflights.com/#website",
+"url":"https://www.business-classflights.com/",
+"name":"Business Class Flights",
+"publisher":{
+"@id":"https://www.business-classflights.com/#organization"
+},
+"inLanguage":"en-US"
+},
+
+{
+"@type":"Service",
+"@id":"https://www.business-classflights.com/#service",
+"name":"Business Class and First Class Flight Booking",
+"provider":{
+"@id":"https://www.business-classflights.com/#travelagency"
+},
+"serviceType":"Flight Booking Service",
+"areaServed":{
+"@type":"Country",
+"name":"United States"
+},
+"description":"Travel agency offering discounted business class flights, first class airline tickets, corporate travel solutions, and group flight booking services."
+},
+
+{
+"@type":"WebPage",
+"@id":"https://www.business-classflights.com/#webpage",
+"url":"https://www.business-classflights.com/",
+"name":"Business Class Flights - Discount Premium Airline Tickets",
+"isPartOf":{
+"@id":"https://www.business-classflights.com/#website"
+},
+"about":{
+"@id":"https://www.business-classflights.com/#travelagency"
+},
+"inLanguage":"en-US"
+},
+
+{
+"@type":"BreadcrumbList",
+"itemListElement":[
+{
+"@type":"ListItem",
+"position":1,
+"name":"Home",
+"item":"https://www.business-classflights.com/"
+}
+]
+}
+
+]
+}`
+}
+</script>
+
+
       </Helmet>
       <Banner />
       <CustomerTrust />
@@ -54,9 +165,9 @@ export default function Home() {
       <PolularDestination />
        <div className="bg-white">
       <div className="container" style={{ maxWidth: "900px" }}>
-        <h2 className="fw-bold mb-4" style={{ fontSize: "36px" }}>
+        <h3 className="fw-bold mb-4" style={{ fontSize: "36px" }}>
           Business Class FAQs
-        </h2>
+        </h3>
 
         {faqs.map((item, i) => (
           <div key={i} className="border-bottom py-4">

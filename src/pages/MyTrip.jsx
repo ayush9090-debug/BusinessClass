@@ -17,6 +17,26 @@ export default function MyTrip() {
         <title>Flight Status Check | Track Your Flight Online</title>
         <meta name="description" content="Track real-time Flight Status updates for domestic and international routes. Check departures, arrivals, delays, and schedule changes quickly and easily."/>
         <link rel="canonical" href="https://www.business-classflights.com/flight-status" />
+        <script type="application/ld+json">
+{
+  `{
+"@context":"https://schema.org",
+"@type":"WebApplication",
+"name":"Flight Status Tracker",
+"url":"https://www.business-classflights.com/flight-status",
+"description":"Check real-time flight status updates, including arrivals, departures, delays, and schedule changes for domestic and international flights.",
+"applicationCategory":"TravelApplication",
+"operatingSystem":"All",
+"publisher":{
+"@type":"TravelAgency",
+"name":"Business Class Flights",
+"url":"https://www.business-classflights.com"
+}
+}`
+}
+</script>
+
+
       </Helmet>
       <div
       className="min-vh-100 position-relative"
@@ -47,7 +67,7 @@ export default function MyTrip() {
                 border: "1px solid rgba(255,255,255,0.35)",
               }}
             >
-              <h4 className="fw-bold text-center mb-4">My Trip</h4>
+              <h1 className="fw-bold text-center mb-4">My Trip</h1>
 
               {/* Toggle */}
               <div
@@ -94,9 +114,9 @@ export default function MyTrip() {
               {/* Form */}
               {mode === "ticket" && (
                 <>
-                  <p className="text-muted small mb-2">
+                  <h3 className="text-muted small mb-2">
                     Enter your ticket number and last name
-                  </p>
+                  </h3>
                   <input
                     type="text"
                     className="form-control mb-3"
@@ -133,9 +153,9 @@ export default function MyTrip() {
                 Find My Booking
               </button>
 
-              <p className="text-center text-muted small mt-3 mb-0">
+              <h2 className="text-center text-muted small mt-3 mb-0">
                 Need help? Contact our 24×7 support team
-              </p>
+              </h2>
             </div>
           </div>
 
