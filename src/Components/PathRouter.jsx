@@ -13,6 +13,8 @@ import TermsCondition from '../pages/TermsCondition'
 import NotFound from "../pages/NotFound";
 import Blog from "../pages/Blog";
 import ContactUs from "../pages/ContactUs";
+import SingleBlog from "../pages/SingleBlog";
+import FakeBlog from "../pages/FakeBlog";
 
 export default function PathRouter() {
   return (
@@ -28,8 +30,10 @@ export default function PathRouter() {
         <Route path="/faq" element={<FAQ />}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
         <Route path="/term-condition" element={<TermsCondition/>} />
-        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<SingleBlog/>}/>
         <Route path="*" element={<NotFound />} />
+        <Route path="/blogs"element={<FakeBlog/>}/>
 
       </Routes>
     </div>
