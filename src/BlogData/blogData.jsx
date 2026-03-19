@@ -27,7 +27,7 @@ export const blogPosts = [
     tags: ["Cheap International Flight", "Domestic Travel", "International Travel"],
 
     excerpt:
-      "Business class air travel was a luxury that only corporate bigwigs and movie stars could afford. However, in the year 2026, every astute traveller is aware that it does not have to burn a hole in your pocket to get your hands on business class air travel. By having the right knowledge and understanding the tariffs charged by airlines, one can treat themselves to the luxury of flat seats and special treatment at a fraction of the cost. By learning how to book business class air travel at the right time, one can take advantage of amazing deals while still treating themselves to the luxury and exclusivity of business class air travel.",
+      "Business class air travel was a luxury that only corporate bigwigs and movie stars could afford. However, in the year 2026, every astute traveller is aware that it does not have to burn a hole in your pocket to get your hands on business class air travel. By having the right knowledge and understanding the tariffs charged by airlines, one can treat themselves to the luxury of flat seats and special treatment at a fraction of the cost. ",
 
     relatedPosts: [1, 3],
 
